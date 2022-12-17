@@ -3,7 +3,7 @@
 I made a clone of the popular music listening platform youtube music using only tailwind.css
 
 ## Live 
-https://youtubemusic-app.netlify.app/
+https://youtube-music-tailwind.netlify.app/
 
 
 

@@ -1,9 +1,9 @@
 
 # YouTube Music Clone
-I made a clone of the popular music listening platform youtube music using only tailwind.css
+I made a clone of the popular music listening platform YouTube Music using only Tailwind.css
 
 ## Live 
-https://youtubemusic-app.netlify.app/
+https://youtube-music-tailwind.netlify.app/
 
 
 

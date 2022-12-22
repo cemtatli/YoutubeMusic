@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="../dist/output.css">
     <link rel="icon" type="image/x-icon" href="https://music.youtube.com/img/on_platform_logo.svg">
 
@@ -80,10 +83,22 @@
                 <a href="#" class="font-medium text-xl text-white hover:text-white">Home</a>
                 <a href="#" class="font-medium text-xl text-white/50 hover:text-white">Explore</a>
                 <a href="#" class="font-medium text-xl text-white/50 hover:text-white">Library</a>
-                <!-- Search Icon -->
-                <input type="text" placeholder="Search" fill="white"
-                    class="focus:outline-none px-4 focus:px-2 rounded font-normal text-base h-8 focus:w-full transition-all relative focus:transition-all">
-                </input>
+                <div class="search h-[30px] relative">
+                    <input type="text"
+                        class="input focus:outline-none border-none w-[30px] h-[30px] font-base p-4 placeholder:font-base bg-black/20 text-white/80"
+                        placeholder="Search">
+                    <button
+                        class="btn focus:outline-none border-none w-[30px] h-[30px] top-0 left-0 absolute cursor-pointer ">
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" fill="white"
+                            stroke-width="2px" class=" style-scope tp-yt-iron-icon h-6 w-6 opacity-70" <g
+                            class="style-scope tp-yt-iron-icon">
+                            <path
+                                d="M20.87,20.17l-5.59-5.59C16.35,13.35,17,11.75,17,10c0-3.87-3.13-7-7-7s-7,3.13-7,7s3.13,7,7,7c1.75,0,3.35-0.65,4.58-1.71 l5.59,5.59L20.87,20.17z M10,16c-3.31,0-6-2.69-6-6s2.69-6,6-6s6,2.69,6,6S13.31,16,10,16z"
+                                class="style-scope tp-yt-iron-icon"></path>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
             </div>
             <!-- !Buttons -->
             <div class="h-full flex items-center justify-end w-1/4 max-xs:hidden">
@@ -98,13 +113,13 @@
             <section class="flex flex-col gap-x-2 py-4 gap-4">
                 <div class="flex flex-row justify-between">
                     <!-- !Heading -->
-                    <div class="flex flex-col gap-1 ">
-                        <h2 class="uppercase text-sm opacity-90  text-white">Start radio from a song</h2>
-                        <h3 id="notoFont" class=" text-xl font-bold  text-white hover:underline hover:transition ">Quick
+                    <div class="flex flex-col gap-1">
+                        <h2 class="uppercase text-sm opacity-90 text-white">Start radio from a song</h2>
+                        <h3 id="notoFont" class=" text-xl font-bold  text-white hover:underline hover:transition">Quick
                             Picks</h3>
                     </div>
                     <!-- !Buttons -->
-                    <div class="flex gap-2 items-end justify-end">
+                    <div class="flex gap-2 items-end justify-end 2xl:hidden ">
                         <!-- ?Button -->
                         <a href="#card-1" type="button" class="cursor-pointer group focus:outline-none">
                             <span
@@ -135,9 +150,10 @@
                 </div>
             </section>
             <!-- !Song List -->
-            <section class="flex flex-row gap-2 w-full h-68 max-sm:overflow-x-scroll">
+            <section class="flex flex-row  gap-2 w-full h-68 max-md:overflow-x-scroll  ">
                 <!-- Card 1 -->
-                <div id=" card-1" class="flex flex-col w-full h-full gap-2 flex-shrink-0 sm:shrink md:shrink">
+                <div id=" card-1"
+                    class="flex flex-col w-[50%] h-full gap-2 flex-shrink-0 sm:shrink-0 md:shrink lg:shrink">
                     <!-- *Song -->
                     <div class="flex shrink-0 items-center gap-x-3">
                         <!-- ?Song Images -->
@@ -214,7 +230,8 @@
 
                 </div>
                 <!-- Card 2 -->
-                <div id="card-2" class="flex flex-col w-full h-full gap-2 flex-shrink-0 sm:shrink md:shrink">
+                <div id="card-2"
+                    class="flex flex-col w-[50%] h-full gap-2 flex-shrink-0 sm:shrink-0 md:shrink lg:shrink">
                     <!-- *Song -->
                     <div class="flex shrink-0 items-center gap-x-3">
                         <!-- ?Song Images -->
@@ -291,7 +308,8 @@
 
                 </div>
                 <!-- Card 3 -->
-                <div id="card-3" class="flex flex-col w-full h-full gap-2 flex-shrink-0 sm:shrink md:shrink">
+                <div id="card-3"
+                    class="flex flex-col w-[50%] h-full gap-2 flex-shrink-0 sm:shrink-0 md:shrink lg:shrink">
                     <!-- *Song -->
                     <div class="flex shrink-0 items-center gap-x-3">
                         <!-- ?Song Images -->
@@ -319,15 +337,12 @@
                                 src="https://lh3.googleusercontent.com/CJNWIgS1LCJMfqsyGCZpRAuVuPhP7zsUDo_vb9765IcaRc66G7GyokBXc13tzvGfUGXyJFqFqMTHp4DN=w544-h544-l90-rj"></img>
                         </div>
                         <!-- ?Song Info -->
-                        <div class="flex flex-col justify-center">
+                        <div class="flex flex-col justify-center overflow-hidden">
                             <h3 class="text-white flex text-start font-semibold cursor-pointer">maNga
                             </h3>
                             <p class="text-white/90 text-sm flex text-start gap-1"><span
                                     class="text-white/85 font-medium hover:underline hover:transition"> Dursun
-                                    Zaman</span>
-                                •
-                                5:19
-                            </p>
+                                    Zaman</span> • 5:19 </p>
                         </div>
                     </div>
                     <!-- *Song -->
@@ -371,7 +386,8 @@
 
                 </div>
                 <!-- Card 4 -->
-                <div id="card-4" class="flex flex-col w-full h-full gap-2 flex-shrink-0 sm:shrink md:shrink">
+                <div id="card-4"
+                    class="flex flex-col w-[50%] h-full gap-2 flex-shrink-0 sm:shrink-0 md:shrink lg:shrink">
                     <!-- *Song -->
                     <div class="flex shrink-0 items-center gap-x-3">
                         <!-- ?Song Images -->
@@ -1297,6 +1313,7 @@
 
         </main>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

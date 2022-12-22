@@ -25,3 +25,20 @@ body{
     background: #999; 
   }
 }
+
+.search .input {
+  transition: width 0.3s ease;
+}
+
+.btn {
+  transition: transform 0.3s ease;
+
+}
+
+.search.active .input {
+  width: 240px;
+}
+
+.search.active .btn {
+  transform: translateX(230px);
+}

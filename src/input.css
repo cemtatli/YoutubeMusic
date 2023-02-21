@@ -3,26 +3,26 @@
 @tailwind utilities;
 
 /* Custom CSS */
-body{
-    font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
-    font-smooth: antialiased;
+body {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  @apply antialiased;
 }
-#notoFont{
-    font-family: 'Noto Sans', sans-serif;
+#notoFont {
+  font-family: "Noto Sans", sans-serif;
 }
-@media screen and (min-width: 1535px){
+@media screen and (min-width: 1535px) {
   ::-webkit-scrollbar {
-    width: 8px; 
+    width: 8px;
   }
   ::-webkit-scrollbar-track {
-    background: #181818; 
+    background: #181818;
   }
   ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #888;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #999; 
+    background: #999;
   }
 }
 
@@ -32,7 +32,6 @@ body{
 
 .btn {
   transition: transform 0.3s ease;
-
 }
 
 .search.active .input {
@@ -41,4 +40,9 @@ body{
 
 .search.active .btn {
   transform: translateX(230px);
+}
+
+.header-section {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }

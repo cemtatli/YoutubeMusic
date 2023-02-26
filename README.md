@@ -8,4 +8,11 @@
 <h3>View and browse the design freely with the demo.</h3>
 <p>I will share the demo link to see the design and browse comfortably. <a href="https://youtubemusic-clone.netlify.app/" target="_blank">You can click me to see the demo.</a></p>
 
+<h3>Use Tech</h3>
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ul>
+
 <img src="https://i.hizliresim.com/67bc8aw.png">

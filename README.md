@@ -1,6 +1,6 @@
 <h1 >YouTube Music</h1>
 
-<p>Welcome to the "YouTube Music" repository. This is a coded version of a previously designed interface design. This is a landing page design.</p>
+<p>Welcome to the "YouTube Music" repository. This is a coded version of a previously designed interface design.</p>
 
 <h3>Only with HTML and Tailwind CSS technology.</h3>
 <p>I used only HTML and Tailwind CSS technologies in this project. I made a copy of YouTube Music because I thought it would improve my coding skills for a copy of existing websites..</p>
